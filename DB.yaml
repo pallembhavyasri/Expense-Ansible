@@ -35,8 +35,8 @@
       login_password: "{{ mysql_root_password }}"
       login_host: "{{ login_host }}"
       filter: version 
-      ignore_errors: yes #while this excutes for 1st time there will be not any root pswd setup hence we are making to ignore the errors
-      register: mysql_connection_output # register is keyword to store the output of a ansible command
+    ignore_errors: yes #while this excutes for 1st time there will be not any root pswd setup hence we are making to ignore the errors
+    register: mysql_connection_output # register is keyword to store the output of a ansible command
 
   - name: print the DB connection output
     ansible.builtin.debug:
