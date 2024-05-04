@@ -17,7 +17,7 @@
     # since we need to install mysql also let us keep loops in the dnf module
     - name: Install the nodejs & Mysql
       ansible.builtin.dnf:
-        name: '{{ item }}'
+        name: "{{ item }}"
         state: installed
       loop:
         - mysql
