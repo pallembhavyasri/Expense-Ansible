@@ -19,7 +19,7 @@
       state: started
       enabled: yes   
 
-  #since ansible is developed by py so it will seek to install the python dependencies also
+  #since ansible is developed by py so inorder to connect to mysql ansible need to install the python dependencies also
   - name: Install python mysql dependencies
     ansible.builtin.pip: 
       name:
