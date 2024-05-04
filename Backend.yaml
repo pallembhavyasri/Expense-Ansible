@@ -25,7 +25,7 @@
       - nodejs
   
   - name: Craete user #Ansible modules by default handle the idempotency hence once user is creater for next tun it will identify the user is created
-    ansibile.builtin.user: 
+    ansible.builtin.user: 
       name: expense 
 
   - name: Create the app directory
