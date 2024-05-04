@@ -75,6 +75,6 @@
     # start & enable the service
     - name: start & Enable the backend service
       ansible.builtin.service:
-        name: "{{ item }}"
+        name: backend
         state: started
         enabled: yes
